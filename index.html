@@ -8,29 +8,49 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <!--Header-->
     <header class="header">
         <nav class="header__nav">
             <ul>
-               <li><a href="#"><img src="img/icon/icon-casa-azul.png" alt="Logo inicio">Inicio</a></li>
-               <li><a href="#"><img src="img/icon/icon-categorias.png" alt="Logo Categorias">Categorías</a></li>
-               <li><a href="#"><img src="img/icon/icon-publicarme.png" alt="Logo Suscribirme">Suscribirme</a></li>
-               <li><a href="#"><img src="img/icon/icon-nosotros.png" alt="Logo Nosotros">Nosotros</a></li>
-               <div class="section__header--menu">
-                <div class="section__header--menu--profile">
-                    <img src="img/icon/icon-ingreso-azul.png"alt="Icono usuarios">
-                    <p>Ingreso</p>
-                </div>
-                <ul>
-                    <li><a href="/">Registro Usuarios</a></li>
-                    <li><a href="/">Grupo Empresarial</a></li>
-                </ul>
-            </div>
+               <li class=""><a href="#"><img src="img/icon/icon-casa.png" alt="Logo inicio">Inicio</a></li>
+               <li class="header__nav--inactive"><a href="#"><img src="img/icon/icon-categorias.png" alt="Logo Categorias">Categorías</a></li>
+               <li class="header__nav--inactive"><a href="#"><img src="img/icon/icon-publicarme.png" alt="Logo Suscribirme">Suscribirme</a></li>
+               <li class="header__nav--inactive"><a href="#"><img src="img/icon/icon-nosotros.png" alt="Logo Nosotros">Nosotros</a></li>
+               <li class="header__nav--inactive"><a href="#"><img src="img/icon/icon-Inici-sesion.png" alt="Logo Iniciar Sesión">Iniciar Sesión</a></li>
             </ul>
         </nav>       
     </header>
+    <!--carrusel buscador y categorias-->
     <section class="content">
         <div class="content__carrusel">
-            carrusel
+            <div class="content__carrusel--contenedor">
+                <!--imagenes carrusel-->
+                <div class="imagen actual">
+                  <img src="img/imagenes-publicidad/1.png"/>
+                  <div class="texto">Lago Tahoe</div>
+                </div>
+                <div class="imagen">
+                  <img src="img/imagenes-publicidad/2.png"/>
+                  <div class="texto">Parque Nacional Redwood</div>
+                </div>
+                <div class="imagen">
+                  <img src="img/imagenes-publicidad/3.png"/>
+                  <div class="texto">Yellowstone</div>
+                </div>
+                <div class="imagen">
+                  <img src="img/imagenes-publicidad/3.png" />
+                  <div class="texto">Parque Nacional Yosemite</div>
+                </div>
+                <!--direccion carrusel-->
+                <a href="#" class="anterior" onclick="anterior();">&#10094;</a>
+                <a href="#" class="siguiente" onclick="siguiente();">&#10095;</a>
+                <div class="puntos">
+                  <span class="punto activo" onclick="mostrar(0);"></span>
+                  <span class="punto" onclick="mostrar(1);"></span>
+                  <span class="punto" onclick="mostrar(2);"></span>
+                  <span class="punto" onclick="mostrar(3);"></span>
+                </div>
+              </div>
         </div>
         <div class="content__buscador">
             buscador
@@ -42,6 +62,6 @@
     <footer class="footer">
         footer
     </footer>
-    
+    <script src="assets/js/carrusel.js"></script>
 </body>
 </html>
