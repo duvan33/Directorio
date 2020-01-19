@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+.header {
+    background: red;
+    height: 3rem;
+}
+.header__nav ul {
+    display: flex;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.content__carrusel {
+    background: yellow;
+}
+.content__buscador {
+    background: green;
+}
+.content__categorias {
+    background: indigo;
+}
+.footer {
+    background: blue;
+    height: 6rem;
+    margin-top: auto;
+}
