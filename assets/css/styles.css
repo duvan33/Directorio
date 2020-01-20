@@ -49,12 +49,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-.content__carrusel {
-    background: yellow;
-}
-.content__buscador {
-    background: green;
-}
 .content__categorias {
     background: indigo;
 }
@@ -70,8 +64,8 @@ body {
 }
 .content__carrusel--contenedor {
     position: relative;
-    width: 700px;
-    height: 300px;
+    width: 853px;
+    height: 480px;
     background-color: black;
     border-radius: 15px;
     margin-top: 15px;
@@ -141,4 +135,32 @@ body {
 }
 .activo {
     background-color: gray;
+}
+/*Buscador*/
+.content__buscador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content__buscador h2 {
+    color: #272121;
+}
+.content__buscador--input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.input--buscar {
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #272121;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.input--buscar:focus {
+   border: 2px solid #ff0000;
 }
