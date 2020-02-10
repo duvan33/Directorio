@@ -4,91 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Categorias</title>
-    <link rel="stylesheet" href="assets/css/header.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/styles-box.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <title>Categorias</title>
 </head>
 <body>
-    <!--Header-->
-    <header class="header">
-        <nav class="header__nav">
-            <ul>
-               <li class="header__nav--inactive"><a href="index.html"><img src="img/icon/icon-casa.png" alt="Logo inicio">Inicio</a></li>
-               <li class=""><a href="#categories"><img src="img/icon/icon-categorias.png" alt="Logo Categorias">Categorías</a></li>
-               <li class="header__nav--inactive"><a href="#"><img src="img/icon/icon-publicarme.png" alt="Logo Suscribirme">Suscribirme</a></li>
-               <li class="header__nav--inactive"><a href="#"><img src="img/icon/icon-nosotros.png" alt="Logo Nosotros">Nosotros</a></li>
-               <li class="header__nav--inactive"><a href="#"><img src="img/icon/icon-Inici-sesion.png" alt="Logo Iniciar Sesión">Iniciar Sesión</a></li>
-            </ul>
-        </nav>       
-    </header>
-    <!--Buscador-->
-    <div class="content__buscador">
-        <h2>¿Que Quieres Buscar Hoy?</h2>
-        <div class="content__buscador--input">
-            <input class="input--buscar" type="search" name="busquedamusica" placeholder="Buscar Empresa...">
-            <input class="input--img" type="image" src="img/icon/icons-search.png" alt="Buscar">
-        </div>
+  <!-- Navegacion -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+    <a class="navbar-brand" href="./index.html">LOGO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./categorias.html">Categorias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Publicar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Iniciar Sesión</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Publico</a>
+            <a class="dropdown-item" href="#">Empresas</a>
+          </div>
+        </li>
+      </ul>
     </div>
-    <!--categorias-->
-    <div class="box" id="categories">
-        <h2>Categorías</h2>
-        <div class="box__container">
-          <div class="box__item">
-            <a href="supermercado.html"><img src="img/imagenes-publicidad/1.png" alt="Supermercados"><p>Supermercados</p></a>
-          </div>
-          <div class="box__item">
-            <a href="restaurantes.html"><img src="img/imagenes-publicidad/1.png" alt="Restaurantes"><p>Restaurantes</p></a>
-          </div>    
-          <div class="box__item">
-            <a href="#"><img src="img/imagenes-publicidad/1.png" alt=""><p>Farmacia</p></a>
-          </div>
-          <div class="box__item">
-            <a href="#"><img src="img/imagenes-publicidad/1.png" alt=""><p>Tecnología</p></a>
-          </div>
-          <div class="box__item">
-            <a href="#"><img src="img/imagenes-publicidad/1.png" alt=""><p>Moda</p></a>
-          </div>
-          <div class="box__item">
-            <a href="#"><img src="img/imagenes-publicidad/1.png" alt=""><p>Belleza</p></a>
-          </div>    
-          <div class="box__item">
-            <a href="#"><img src="img/imagenes-publicidad/1.png" alt=""><p>Hogar</p></a>
-          </div>
-          <div class="box__item">
-            <a href="#"><img src="img/imagenes-publicidad/1.png" alt=""><p>Deportes</p></a>
-          </div>
-          <div class="box__item">
-            <a href="#"><img src="img/imagenes-publicidad/1.png" alt=""><p>Vehículos</p></a>
-          </div> 
-          <div class="box__item">
-            <a href="#"><img src="img/imagenes-publicidad/1.png" alt=""><p>Fundaciones</p></a>
-          </div>
-          <div class="box__item">
-            <a href="#"><img src="img/imagenes-publicidad/1.png" alt=""><p>Educación</p></a>
-          </div> 
-          <div class="box__item">
-            <a href="#"><img src="img/imagenes-publicidad/1.png" alt=""><p>Libros</p></a>
-          </div>       
-        </div>
     </div>
+  </nav>
+  <!--Buscador-->
+  <form class="form-inline">
+    <input class="form-control mr-sm-2 col-md-7" type="search" placeholder="¿Que quieres buscar?" aria-label="Search">
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+  </form>
+  <!--categorias-->
+  <div class="box" id="categories">
+      <h2>Categorías</h2>
+      <div class="box__container">
+        <div class="box__item">
+          <a href="supermercados.html">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="Supermercados">
+            <p>Supermercados</p>
+          </a>
+        </div>
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Restaurantes</p>
+          </a>
+        </div>    
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Farmacia</p>
+          </a>
+        </div>
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Tecnología</p>
+          </a>
+        </div>
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Moda</p>
+          </a>
+        </div>
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Belleza</p>
+          </a>
+        </div>    
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Hogar</p>
+          </a>
+        </div>
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Deportes</p>
+          </a>
+        </div>
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Vehículos</p>
+          </a>
+        </div> 
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Fundaciones</p>
+          </a>
+        </div>
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Educación</p>
+          </a>
+        </div> 
+        <div class="box__item">
+          <a href="#">
+            <img src="img/imagenes-categorias/imagen_muestra.png" alt="">
+            <p>Libros</p>
+          </a>
+        </div>       
+      </div>
+  </div>
     <!--footer-->
-    <footer class="footer">
-        <div class="footer__social">
+  <footer class="footer navbar-dark bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="footer__social">
             <span>Nuestras redes sociales</span>
             <div class="footer__social--icon">
-                <a href="#"><img src="img/icon/icon-facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="img/icon/icon-instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="img/icon/icon-twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="img/icon/icon-facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="img/icon/icon-instagram.png" alt="Instagram"></a>
+              <a href="#"><img src="img/icon/icon-twitter.png" alt="Twitter"></a>
             </div>
+          </div>
         </div>
-    <div class="enlaces">
-      <a href="">Términos y Condiciones</a>
-      <a href="">Contáctanos</a>
-      <a href="">Preguntas frecuentes</a>
+        <div class="col col-centrar">
+          <div class="enlaces">
+            <a href="">Términos y Condiciones</a>
+            <a href="">Contáctanos</a>
+            <a href="">Preguntas frecuentes</a>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
-    
+  </footer>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
